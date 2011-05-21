@@ -1,0 +1,20 @@
+Usage:
+
+$ python -c """
+> import min_dist
+> print(min_dist.min_dist([
+>     '1234 Foo Drive, 56789, Bartown, KY',
+>     ...
+> ]))
+> """
+
+Rationale:	
+
+Say you're in a group, and you've got to decide where to hold a group meeting. Generally, it makes the most sense to have the meeting at the place closest to the homes of all of the group members. That minimizes the total distance everyone has to drive in order to get to the meeting.
+
+Unfortunately, if you have N group members (who we'll assume all live in different houses), it takes N(N-1) or (N^2 - N) Google Maps queries to find the house that is closest to all the others.
+
+min_dist does that hard work for you. You just pass it a list of addresses, and it figures out which one makes for a good hub.
+
+I mostly did this because I've wanted to use the Maps API for something useful. Maybe, just maybe, somebody out there will save a few pennies on gas thanks to this script.
+
